@@ -1,0 +1,11 @@
+{
+  "name": "react-app",
+  "version": "0.1.0",
+  "scripts": {
+    "build": "webpack index.test.js -o index.build.test.js --mode production"
+  },
+  "devDependencies": {
+    "crypto-js": "^3.1.9-1",
+    "jsencrypt": "^3.0.0-rc.1"
+  }
+}
