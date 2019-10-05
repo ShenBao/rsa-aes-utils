@@ -73,11 +73,11 @@ var encrypted = {
 
 console.log('encrypted:', JSON.stringify(encrypted, null, 4));
 
-var decryptAesKey = RSAUtil.privateDecrypt(encryptedAesKey, rsaPrivateKey);
-var decryptedData = AESUtil.decryptByECB(encryptedData, decryptAesKey);
+var decryptedAesKey = RSAUtil.privateDecrypt(encryptedAesKey, rsaPrivateKey);
+var decryptedData = AESUtil.decryptByECB(encryptedData, decryptedAesKey);
 
 var decrypted = {
-    decryptAesKey,
+    decryptedAesKey,
     decryptedData
 }
 console.log('decrypted:', JSON.stringify(decrypted, null, 4));
