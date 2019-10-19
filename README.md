@@ -120,7 +120,9 @@ RSA公钥加密AES的密钥+AES密钥加密明文的密文----通过Internet发�
 1. 注册登录流程；
 2. 敏感数据：比如身份证号、银行卡号等信息；
 
-### js
+## js
+
+具体代码实现见 js-util 内。
 
 RSAUtil.js
 ```js
@@ -351,9 +353,13 @@ var decrypted = {
 console.log('decrypted:', JSON.stringify(decrypted, null, 4));
 ```
 
-### nodejs
+## nodejs
 
-nodejs 流程和 js 也类似，具体代码见 node-util 内。
+具体代码实现见 node-util 内。
+
+## java
+
+具体代码实现见 java-util 内。
 
 ## 示例
 
