@@ -30,7 +30,6 @@ public class AESUtilTest {
 
     @Test
     public void AESByCBCTest() throws Exception {
-
         String key = AESUtil.createAesKey();
         System.out.println("key: " + key);
         String iv = AESUtil.createAesIv();
@@ -44,7 +43,6 @@ public class AESUtilTest {
 
     @Test
     public void AESByECBTest() throws Exception {
-
         String key = AESUtil.createAesKey();
         System.out.println("key: " + key);
         String encrypted = AESUtil.encryptByECB(data, key);
@@ -52,5 +50,4 @@ public class AESUtilTest {
         System.out.println("encrypted: " + encrypted);
         System.out.println("decrypted: " + decrypted);
     }
-
 }

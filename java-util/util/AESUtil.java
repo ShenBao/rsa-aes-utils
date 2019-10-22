@@ -22,7 +22,7 @@ public class AESUtil {
         try {
             KeyGenerator kg = KeyGenerator.getInstance("AES");
             kg.init(128);
-            //要生成多少位，只需要修改这里即可128, 192或256
+            //要生成多少位，只需要修改这里即可 128, 192 或 256
             SecretKey sk = kg.generateKey();
             byte[] b = sk.getEncoded();
             String k = byteToHexString(b);
@@ -41,9 +41,8 @@ public class AESUtil {
         String iv = RandomStringUtils.randomAlphanumeric(16);
         return iv.toLowerCase();
     }
-
     /**
-     * byte数组转化为16进制字符串
+     * byte 数组转化为 16 进制字符串
      * @param bytes
      * @return String
      */
@@ -62,7 +61,6 @@ public class AESUtil {
             }
         }
         return sb.toString();
-
     }
     /**
      * 加密 CBC
@@ -100,8 +98,7 @@ public class AESUtil {
      * @return String
      */
     public static String decryptByCBC(String data, String key, String iv) throws Exception {
-        try
-        {
+        try {
             byte[] encrypted1 = new BASE64Decoder().decodeBuffer(data);
             Cipher cipher = Cipher.getInstance("AES/CBC/NoPadding");
             SecretKeySpec keyspec = new SecretKeySpec(key.getBytes(), "AES");
@@ -110,8 +107,7 @@ public class AESUtil {
             byte[] original = cipher.doFinal(encrypted1);
             String originalString = new String(original);
             return originalString.trim();
-        }
-        catch (Exception e) {
+        } catch (Exception e) {
             e.printStackTrace();
             return null;
         }
@@ -149,8 +145,7 @@ public class AESUtil {
      * @return String
      */
     public static String decryptByECB(String data, String key) throws Exception {
-        try
-        {
+        try {
             byte[] encrypted1 = new BASE64Decoder().decodeBuffer(data);
             Cipher cipher = Cipher.getInstance("AES/ECB/NoPadding");
             SecretKeySpec keyspec = new SecretKeySpec(key.getBytes(), "AES");
@@ -158,8 +153,7 @@ public class AESUtil {
             byte[] original = cipher.doFinal(encrypted1);
             String originalString = new String(original);
             return originalString.trim();
-        }
-        catch (Exception e) {
+        } catch (Exception e) {
             e.printStackTrace();
             return null;
         }

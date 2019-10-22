@@ -5,18 +5,50 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>RSA AES demo</title>
+    <title>RSA-AES-Utils</title>
     <style>
+        html {
+            height: 100%;
+        }
+
+        body {
+            max-width: 800px;
+            box-sizing: border-box;
+            height: 100%;
+            padding: 10px;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+        }
+
         h1 {
+            display: inline-block;
+        }
+
+        a {
             color: red;
+            text-decoration: none;
+        }
+
+        .iframe1 {
+            width: 100%;
+            flex: 1;
+            border: 1px solid #eaecef;
         }
     </style>
+    <script src="./index.build.test.js"></script>
 </head>
 
 <body>
-    <h1>RSA-AES-Utils</h1>
-    <p>Please open the browser console to view ~</p>
-    <script src="./index.build.test.js"></script>
+    <div>
+        <h1><a href="https://github.com/ShenBao/rsa_aes_utils" target="_blank">RSA-AES-Utils</a></h1>
+        <iframe style="margin-left: 2px; margin-bottom:-5px;" frameborder="0" scrolling="0" width="90px" height="20px"
+            src="https://ghbtns.com/github-btn.html?user=ShenBao&amp;repo=rsa_aes_utils&amp;type=star&amp;count=true"></iframe>
+    </div>
+    <p>Please open the browser console to view ~ </p>
+
+    <iframe class="iframe1" src="https://shenbao.github.io/rsa_aes_utils/" frameborder="0" scrolling="auto"></iframe>
+
 </body>
 
 </html>

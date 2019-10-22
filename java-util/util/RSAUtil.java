@@ -36,8 +36,7 @@ public class RSAUtil {
         return new String(cipher.doFinal(data));
     }
 
-    public static String decrypt(String data, String base64PrivateKey)
-        throws Exception {
+    public static String decrypt(String data, String base64PrivateKey) throws Exception {
         return decrypt(Base64.getDecoder().decode(data.getBytes()), getPrivateKey(base64PrivateKey));
     }
 }
