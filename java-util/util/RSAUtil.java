@@ -8,9 +8,9 @@ import java.util.Base64;
 import javax.crypto.Cipher;
 
 /**
- * @author Created by ShenBao
- * @description
- * @since on 2019-10-17 20:22.
+ * Copyright (c) 2019-present ShenBao
+ * @homepage https://github.com/ShenBao/rsa-aes-utils
+ * @author ShenBao <shenbaoone@gmail.com>
  */
 public class RSAUtil {
     private static RSAPublicKey getPublicKey(String base64PublicKey) throws Exception {

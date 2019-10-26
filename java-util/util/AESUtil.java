@@ -9,9 +9,9 @@ import org.apache.commons.lang.RandomStringUtils;
 import sun.misc.BASE64Decoder;
 
 /**
- * @author Created by ShenBao
- * @description
- * @since on 2019-10-17 20:22.
+ * Copyright (c) 2019-present ShenBao
+ * @homepage https://github.com/ShenBao/rsa-aes-utils
+ * @author ShenBao <shenbaoone@gmail.com>
  */
 public class AESUtil {
     /**

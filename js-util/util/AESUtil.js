@@ -1,3 +1,9 @@
+/**
+ * Copyright (c) 2019-present ShenBao
+ * @homepage https://github.com/ShenBao/rsa-aes-utils
+ * @author ShenBao <shenbaoone@gmail.com>
+ */
+
 import CryptoJS from 'crypto-js';
 
 /**
