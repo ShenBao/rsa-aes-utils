@@ -64,8 +64,8 @@ npm i jsencrypt -D // RSA加密算法
 
 test.js
 ```js
-import RSAUtil from '../utils/RSAUtil';
-import AESUtil from "../utils/AESUtil";
+import RSAUtil from '../util/RSAUtil';
+import AESUtil from "../util/AESUtil";
 
 // 请替换 key
 var rsaPublicKey = `PUBLIC KEY`;
@@ -115,11 +115,11 @@ console.log('decrypted:', JSON.stringify(decrypted, null, 4));
 
 ## nodejs
 
-具体代码实现见 node-utils 内。
+具体代码实现见 node-util 内。
 
 ## java
 
-具体代码实现见 java-utils 内。
+具体代码实现见 java-util 内。
 
 ## 更多链接
 
