@@ -1,8 +1,8 @@
-# rsa_aes_utils
+# rsa-aes-utils
 
 RSA、AES 加解密，浏览器端 JS 加密，服务端 nodejs、java 解密。
 
-[JS 版在线示例](https://shenbao.github.io/rsa_aes_utils/example/rsa-aes-demo/)
+[JS 版在线示例](https://shenbao.github.io/rsa-aes-utils/example/rsa-aes-demo/)
 
 ## 加解密介绍
 

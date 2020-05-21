@@ -1,6 +1,6 @@
 # AES
 
-AES加密算法是密码学中的高级加密标准，该加密算法采用对称分组密码体制，密钥长度的最少支持为128、192、256，分组长度128位，算法应易于各种硬件和软件实现。这种加密算法是美国联邦政府采用的区块加密标准，AES标准用来替代原先的DES，已经被多方分析且广为全世界所使用。
+AES 加密算法是密码学中的高级加密标准，该加密算法采用对称分组密码体制，密钥长度的最少支持为 128、192、256，分组长度 128 位，算法应易于各种硬件和软件实现。这种加密算法是美国联邦政府采用的区块加密标准，AES 标准用来替代原先的 DES，已经被多方分析且广为全世界所使用。
 
 A-->(通过 K 加密)-->B-->(通过 K 解密)-->A
 
@@ -8,9 +8,9 @@ AES 加解密涉及到的模式（如 CBC、ECB 等）、偏移量和填充等, 
 
 ## 前端 AES 加解密
 
-AES对称加密算法。
+AES 对称加密算法。
 
-AES是基于数据块的加密方式，每次处理的数据是一块（16字节），当数据不是 16 字节的倍数时自动填充OR手动填充(填充方式取决于使用哪种填充方式)。
+AES 是基于数据块的加密方式，每次处理的数据是一块（16 字节），当数据不是 16 字节的倍数时自动填充 OR 手动填充(填充方式取决于使用哪种填充方式)。
 
 支持的模式包括：
 
@@ -21,20 +21,20 @@ AES是基于数据块的加密方式，每次处理的数据是一块（16字节
 
 补码方式包括：NoPadding，PKCS5Padding，ISO10126Padding；
 
-补码方式的选择依据解码端，例如 OC 解码需要使用 noPadding，crypto-js 解码需要使用PKCS5Padding
+补码方式的选择依据解码端，例如 OC 解码需要使用 noPadding，crypto-js 解码需要使用 PKCS5Padding
 
-加密内容必须为16的倍数，在 PKCS5Padding、ISO10126Padding 填充模式下会自动补位，在noPadding填充模式下需要自己进行补位；
+加密内容必须为 16 的倍数，在 PKCS5Padding、ISO10126Padding 填充模式下会自动补位，在 noPadding 填充模式下需要自己进行补位；
 
 注意：如果结合服务端加密内容使用 crypto-js 进行解密，无需进行 BASE64 解码
 
 [java 安全性文档](https://docs.oracle.com/javase/6/docs/technotes/guides/security/StandardNames.html#algspec)
 
-Oracle JDK 7(经过测试)，AES的默认密码为 AES / ECB / PKCS5Padding
+Oracle JDK 7(经过测试)，AES 的默认密码为 AES / ECB / PKCS5Padding
 Java 中 AES 加密与解密默认使用 AES/ECB/PKCS5Padding 模式
 
 ### ECB 模式： AES/ECB/PKCS5Padding
 
-查到资料说是 java AES的默认密码为AES/ECB/PKCS5Padding，但是试了不行，写成 AES 不加后面的 ECB/PKCS5Padding。
+查到资料说是 java AES 的默认密码为 AES/ECB/PKCS5Padding，但是试了不行，写成 AES 不加后面的 ECB/PKCS5Padding。
 
 - js 中为：Pkcs7
 - java 中为： PKCS5Padding
